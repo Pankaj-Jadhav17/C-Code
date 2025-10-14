@@ -1,5 +1,5 @@
+/* Print the multiplication table for a given number */
 #include<stdio.h>
-
 int main()
 {
     int i=1,n;

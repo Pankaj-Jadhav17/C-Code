@@ -26,7 +26,6 @@ int main()
     printf("number is palindrome\n");
     else
     printf("number is not palidrome\n");
-
     return 0;
 }
 

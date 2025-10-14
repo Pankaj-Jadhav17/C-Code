@@ -18,12 +18,6 @@ int main()
     {
         scanf("%d",&a[i]);
     }
-
-    // printf("Entered a array elements....\n");
-    // for (i = 0; i < n; i++)
-    // {
-    //     printf("%d",a[i]);
-    // }
     
     int pos=0,neg=0,zero=0;
     for(i=0;i<n;i++)
@@ -48,7 +42,6 @@ int main()
                 printf("%d,%d",a[i],a[j]);
                 printf("\n");
             }
-         
         }
     }
     free(a);

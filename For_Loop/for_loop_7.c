@@ -1,3 +1,4 @@
+/*Sum of squares of first n numbers*/
 #include<stdio.h>
 #include<math.h>
 int main()

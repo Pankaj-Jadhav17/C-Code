@@ -9,9 +9,9 @@ int main() {
     int n;
     printf("Enter the number of elements: ");
     scanf("%d", &n);
-    int *arr = (int *)malloc(n * sizeof(int));
+    int *a = (int *)malloc(n * sizeof(int));
 
-    if (arr == NULL) {
+    if (a == NULL) {
         printf("Memory allocation failed.\n");
         return 1;
     }
@@ -19,21 +19,21 @@ int main() {
     printf("Enter %d integers:\n", n);
     for (int i = 0; i < n; i++) 
     {
-        scanf("%d", &arr[i]);
-        if (arr[i] % 2 == 0) {
-            arr[i] = 0;
+        scanf("%d", &a[i]);
+        if (a[i] % 2 == 0) {
+            a[i] = 0;
         } else {
-            arr[i] = 1;
+            a[i] = 1;
         }
     }
 
-    qsort(arr, n, sizeof(int), compare);
+    qsort(a, n, sizeof(int), compare);
     printf("Modified sorted array:\n");
 
     for (int i = 0; i < n; i++) 
     {
-        printf("%d\n", arr[i]);
+        printf("%d\n", a[i]);
     }
-    free(arr);
+    free(a);
     return 0;
 }
