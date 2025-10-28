@@ -2,7 +2,7 @@
 int main()
 {
     int i,numbers[6];  
-    printf("Enter 6 numbers:\n");
+    printf("Enter 6 Numbers:\n");
     for(i = 0; i < 6; i++)
      {
         printf("Number %d: ",i + 1);
