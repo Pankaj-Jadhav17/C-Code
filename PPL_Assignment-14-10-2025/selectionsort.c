@@ -77,7 +77,7 @@ int main() {
 
     fclose(out);
 
-    printf("Sorted and saved to sorted.txt\n");
+    printf("Sorted and Saved to sorted.txt\n");
 
     return 0;
 }
