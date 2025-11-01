@@ -1,42 +1,58 @@
-#include<stdio.h>
-int main()
-{
-    int n,i,j;
-    printf("Enter (n*n) matrix: ");
-    scanf("%d",&n);
-   
-    int matrixA[n][n];
-    for ( i = 0; i < n; i++)
-    {
-        for ( j = 0; j < n; i++)
-        {
-            scanf("%d",&matrixA[i][j]);
-        }
-    }
-    printf("\n");
+#include <stdio.h>
 
-    int matrixB[n][n];
-    for ( i = 0; i < n; i++)
-    {
-        for ( j = 0; j < n; j++)
-        {
-            scanf("%d",&matrixB[i][j]);
-        }
-    }
-    printf("\n");
-    
-    
-    int matrixC[i][j];
-    printf("addition of whole matrix: ");
-     for ( i = 0; i < n; i++ ){
-        for ( i = 0; i < n; i++){
-           matrixC[i][j]= matrixA[i][j]+matrixB[i][j];
-        }
-    }
-    printf("\n");
+int main() {
+    int n;
 
-    
+    // Input number of rows and columns
+    printf("Enter a (n*n): matrix: ");
+    scanf("%d", &n);
+
+    int matrix1[n][n], matrix2[n][n];
+    int sum[n][n], diff[n][n];
+
+    // Input first matrix
+    printf("\nEnter elements of first matrix:\n");
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            scanf("%d", &matrix1[i][j]);
+        }
+    }
+
+    // Input second matrix
+    printf("\nEnter elements of second matrix:\n");
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            scanf("%d", &matrix2[i][j]);
+        }
+    }
+
+    // Perform addition and subtraction
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            sum[i][j] = matrix1[i][j] + matrix2[i][j];
+            diff[i][j] = matrix1[i][j] - matrix2[i][j];
+        }
+    }
+
+    // Display results
+    printf("\nSum of the two matrices:\n");
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            printf("%d\t", sum[i][j]);
+        }
+        printf("\n");
+    }
+
+    printf("\nDifference of the two matrices (Matrix1 - Matrix2):\n");
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            printf("%d\t", diff[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
 }
+
 
 
 
