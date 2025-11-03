@@ -30,7 +30,7 @@ int main()
              result[i][j]=0;
              for (int k = 0; k < n; k++)
              {
-                result[i][j] += matrixA[i][j]*matrixB[i][j];
+                result[i][j] = matrixA[i][j]*matrixB[i][j];
              }             
         }
     }
