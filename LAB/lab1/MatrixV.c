@@ -37,6 +37,5 @@ int main()
     for (i = 0; i < m; i++) {
         printf("%d\n", result[i]);
     }
-
     return 0;
 }
