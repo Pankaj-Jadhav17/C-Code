@@ -93,7 +93,6 @@ int main() {
             ad_max = matrix[i][j];
         }
     }
-
     printf("Maximum among anti-diagonal elements = %d\n", max);
     return 0;
 }
