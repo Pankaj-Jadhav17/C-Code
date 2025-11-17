@@ -30,6 +30,5 @@ int main()
         tn--; 
         i++;
     }
-
     return 0;
 }
