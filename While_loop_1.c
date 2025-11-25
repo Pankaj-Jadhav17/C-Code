@@ -5,8 +5,7 @@ int main()
     printf("enter a number: ");
     scanf("%d",&n);
     i=1;
-    while(i<n)
-    {
+    while(i<n) {
         printf("number i=%d\n",i);
         i++;
     }

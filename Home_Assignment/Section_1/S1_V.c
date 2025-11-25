@@ -7,5 +7,6 @@ int main()
     printf("The size of float = %zu bytes\n",sizeof(float));
     printf("The size of double = %zu bytes\n",sizeof(double));
     printf("The size of character = %zu bytes\n",sizeof(char));
+    
    return 0;
 }
