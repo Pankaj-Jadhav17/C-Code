@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() {
+int main()
+{
     double a, b, c, discriminant, root1, root2, realPart, imagPart;
 
     // Input coefficients
