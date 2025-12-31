@@ -52,7 +52,8 @@
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int i, j, k;
 
     int n = 4, m = 4, p = 4;  // Dimensions of 4×4 matrices
