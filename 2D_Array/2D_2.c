@@ -8,8 +8,7 @@ int main()
                   };
     int row=0,col=0;
     
-    for ( col = 0; col < n; col++)
-    {
+    for ( col = 0; col < n; col++){
         printf("%d",a[0][col]);
     }
     printf("\n");
