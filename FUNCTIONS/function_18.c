@@ -3,8 +3,8 @@
 // Function to find square root
 float findSqrt(float num)
 {
-    float guess = num;
-    float eps = 0.00001;
+    float guess = num;     //√num
+    float eps = 0.00001;   //epsilon
 
     while ((guess * guess - num) > eps)
     {
