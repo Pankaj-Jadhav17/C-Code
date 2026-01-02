@@ -6,8 +6,7 @@ void printArray(int a[],int n)
     }
     printf("\n");
 }
-int main()
-{
+int main(){
     int a[4]={1,2,3,4};
     printArray(a,4);
     return 0;
