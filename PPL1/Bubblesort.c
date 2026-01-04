@@ -6,7 +6,7 @@ int main()
     scanf("%d",&n);
     for(i=0;i<n;i++)
     scanf("%d",&a[i]);
-    for(pass=1;pass<n;pass++)
+    for(pass=0;pass<n-1;pass++)
     {
         for(i=0;i<n-pass-1;i++)
         {
