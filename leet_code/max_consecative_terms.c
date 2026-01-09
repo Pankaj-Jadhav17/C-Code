@@ -4,18 +4,16 @@ int MaxConsecativeTerms(int nums[], int n)
     int cnt=0;
     int ans = 0;
     for(int i=0;i<n;i++){
-        if (nums[i]==1)
+        if (nums[i]==1){
         cnt++;
-        if(cnt>ans)
-        {
+        if(cnt>ans){
             ans = cnt;
         }
-        else{
+    }else{
             cnt = 0;
-        }
-        return ans;
     }
-
+    }
+      return ans;
 }
 void printArray(int arr[], int n) {
     printf("Array elements: ");
