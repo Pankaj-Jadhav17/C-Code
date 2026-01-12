@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 int* MissNums(int* nums, int n, int* returnSize) {
     int dup = -1, miss = -1;
     for (int i = 0; i < n; i++) {
