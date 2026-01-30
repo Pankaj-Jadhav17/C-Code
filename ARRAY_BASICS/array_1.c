@@ -14,6 +14,7 @@ int main()
         printf("%d\n",numbers[i]);
     }
     return 0;
+    
 }
     
 
